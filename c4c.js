@@ -244,7 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	updateCarousel();
 	setSelectedDay(selectedDateKey);
 
-	eventList.innerHTML = eventData
+	eventList.innerHTML = [...eventData]
+		.reverse()
 		.slice(0, 3)
 		.map((event) => {
 			const dateText = event.start.getTime() === event.end.getTime()
