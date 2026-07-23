@@ -17,7 +17,10 @@
 	<header>
 		<div class="wrap nav">
 			<a class="brand" href="#top" aria-label="Crafts 4 Charity home">
-				<div class="mark" aria-hidden="true"></div>
+				<div class="mark" aria-hidden="true">
+					<span class="orbit orbit-a"></span>
+					<span class="orbit orbit-b"></span>
+				</div>
 				<div>
 					<strong>Crafts 4 Charity</strong>
 					<span>University of Waterloo DIY club</span>
@@ -27,6 +30,7 @@
 			<nav class="nav-links" aria-label="Primary">
 				<a href="#about">About</a>
 				<a href="#events">Events</a>
+				<a href="#events">Calendar</a>
 				<a href="#crafts">Crafts</a>
 				<a href="#faq">FAQ</a>
 				<a href="#contact">Contact</a>
@@ -38,11 +42,11 @@
 		<div class="wrap hero" id="top">
 			<div class="hero-grid">
 				<div class="fade-in">
-					<div class="eyebrow">Make things. Help people.</div>
-					<h1>Crafting for a cause, one project at a time.</h1>
+					<div class="eyebrow">Supporting through crafts.</div>
+					<h1>Money given to your local communities, one craft at a time.</h1>
 					<p class="lede">
 						Crafts 4 Charity is a University of Waterloo club that brings people together through DIY projects,
-						handmade sales, and creative events. Everything we make is designed to spark creativity and support a good cause.
+						handmade sales, and creative events. Everything we make is designed to spark creativity and support a good cause!
 					</p>
 
 					<div class="cta-row">
@@ -51,7 +55,7 @@
 					</div>
 
 					<p class="hero-note">
-						Follow along on Instagram, join a workshop, or come help us build our next batch of crafts.
+						Follow along on Instagram, join a workshop, or make your very own crafts with us! ⊹ ࣪ ₊˚✩
 					</p>
 				</div>
 
@@ -67,8 +71,14 @@
 
 					<div class="poster-copy">
 						<p>
-							Replace this illustrated mark with your pasted logo file when you have it. The layout is already tuned
-							for a circular logo with a white background.
+							If you're interested in making things, meeting new people, and helping out a good cause, this is the club for you! For more details, check out our <a href="https://linktr.ee/uw.crafts4charity" target="_blank" rel="noreferrer" class="wavy-link" style="
+    color: #6d5a56;
+    text-decoration: underline wavy #6d5a56;
+    text-underline-offset: 1px;
+    text-decoration-thickness: 2px;
+">
+  linktree
+</a>.
 						</p>
 					</div>
 
@@ -93,11 +103,7 @@
 		<section id="about">
 			<div class="wrap">
 				<div class="section-head">
-					<h2>What the club is about</h2>
-					<p>
-						The old site says it simply: a DIY campus club at UW that wants to spark creativity and raise money for a great cause.
-						This version keeps that message front and center.
-					</p>
+					<h2>What the club does</h2>
 				</div>
 
 				<div class="grid-2">
@@ -133,32 +139,27 @@
 		<section id="events">
 			<div class="wrap">
 				<div class="section-head">
-					<h2>Upcoming events</h2>
-					<p>Swap these placeholders with your actual schedule when you have the next term planned out.</p>
+					<h2>Event calendar</h2>
 				</div>
 
-				<div class="timeline">
-					<div class="timeline-item fade-in delay-1">
-						<strong>Week 1</strong>
-						<div>
-							<h3>Kickoff craft night</h3>
-							<p>Meet the team, pick a project, and get a feel for the club. Great for newcomers.</p>
+				<div class="calendar-shell">
+					<div class="calendar-carousel">
+						<div class="calendar-controls">
+							<button class="carousel-button" type="button" data-calendar-prev aria-label="Previous month">←</button>
+							<div class="calendar-status" data-calendar-status>Month</div>
+							<button class="carousel-button" type="button" data-calendar-next aria-label="Next month">→</button>
+						</div>
+						<div class="calendar-viewport">
+							<div class="calendar-track" data-calendar-track></div>
 						</div>
 					</div>
-					<div class="timeline-item fade-in delay-2">
-						<strong>Week 3</strong>
-						<div>
-							<h3>DIY workshop table</h3>
-							<p>Learn a craft technique and help us prep materials for fundraising items.</p>
+					<aside class="calendar-sidebar fade-in delay-1">
+						<div class="calendar-sidebar-head">
+							<h3>Event list</h3>
 						</div>
-					</div>
-					<div class="timeline-item fade-in delay-3">
-						<strong>Month end</strong>
-						<div>
-							<h3>Charity sale</h3>
-							<p>Browse handmade pieces, support the club, and help turn crafts into donations.</p>
-						</div>
-					</div>
+						<p class="calendar-help">Click any highlighted day to open a cute little event card.</p>
+						<div class="event-list" data-event-list></div>
+					</aside>
 				</div>
 			</div>
 		</section>
@@ -167,25 +168,31 @@
 			<div class="wrap">
 				<div class="section-head">
 					<h2>Past crafts and highlights</h2>
-					<p>Use this area for a gallery once you have images from previous events, sales, and projects.</p>
 				</div>
 
 				<div class="list-grid">
 					<article class="mini fade-in delay-1">
-						<h3>Seasonal cards and prints</h3>
-						<p>Simple, colorful pieces that work well for fundraising tables and event giveaways.</p>
+						<h3>Polymer Clay Crafts</h3>
+						<img src="images/seasonal-cards.jpg" alt="Seasonal cards and prints" class="mini-image">
+						<p>Done in collaboration with the Neurodivergent Club, attendees were instructed to use polymer clay to create unique and personalized items.</p>
 					</article>
+
 					<article class="mini fade-in delay-2">
-						<h3>Handmade accessories</h3>
-						<p>Small craft items that are easy to personalize and great for member collaboration.</p>
+						<h3>Glass Painting</h3>
+						<img src="images/handmade-accessories.jpg" alt="Handmade accessories" class="mini-image">
+						<p>Using acrylic cut outs, participants created beautiful and unique glass paintings.</p>
 					</article>
+
 					<article class="mini fade-in delay-3">
-						<h3>Community workshops</h3>
-						<p>Casual sessions where members try different materials, tools, and techniques together.</p>
+						<h3>Creator's Market</h3>
+						<img src="images/community-workshops.jpg" alt="Community workshops" class="mini-image">
+						<p>Marketplace for fellow university of Waterloo students to showcase and sell their handmade creations.</p>
 					</article>
-					<article class="mini fade-in delay-3">
-						<h3>Fundraising bundles</h3>
-						<p>Grouped craft sets designed to be sold efficiently while keeping a handmade feel.</p>
+
+					<article class="mini fade-in delay-4">
+						<h3>Pipe Cleaner Flowers</h3>
+						<img src="images/fundraising-bundles.jpg" alt="Fundraising bundles" class="mini-image">
+						<p>Whimsical flowers made from pipe cleaners, perfect for adding a touch of creativity to any space.</p>
 					</article>
 				</div>
 			</div>
@@ -195,25 +202,24 @@
 			<div class="wrap">
 				<div class="section-head">
 					<h2>FAQ</h2>
-					<p>A short set of answers that covers the basics students usually want before joining.</p>
 				</div>
 
 				<div class="grid-2">
 					<article class="card fade-in delay-1">
 						<h3>Do I need to be artsy?</h3>
-						<p>No. The club is for anyone who wants to make things, learn, and help out. We keep projects approachable.</p>
+						<p>All levels of experience are welcome! The club is for anyone who wants to make things, learn, and help out. We keep projects approachable.</p>
 					</article>
 					<article class="card fade-in delay-2">
-						<h3>Can I join if I only want to volunteer?</h3>
-						<p>Yes. We always need help with setup, crafting, event promotion, sales, and cleanup.</p>
+						<h3>How can I join if I want to volunteer?</h3>
+						<p>Around the beginning of each term, we typically have listings for new positions. Check our social media or contact us for more information.</p>
 					</article>
 					<article class="card fade-in delay-2">
 						<h3>Where do donations go?</h3>
-						<p>Use this spot to explain your charity partner or how funds are allocated each term.</p>
+						<p>Each post on our instagram will show where the funds are going and how they are being used to support the cause.</p>
 					</article>
 					<article class="card fade-in delay-3">
 						<h3>How do I stay updated?</h3>
-						<p>Instagram is the easiest place to post photos, schedule changes, and quick reminders.</p>
+						<p>Instagram is our most active account to see photos, schedule changes, and quick reminders.</p>
 					</article>
 				</div>
 			</div>
@@ -223,7 +229,6 @@
 			<div class="wrap">
 				<div class="section-head">
 					<h2>Get in touch</h2>
-					<p>These are the links from the old site, organized in a cleaner way.</p>
 				</div>
 
 				<div class="donate">
@@ -287,6 +292,18 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="event-modal" data-event-modal aria-hidden="true">
+			<div class="event-modal-backdrop" data-event-modal-close></div>
+			<div class="event-modal-card" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+				<button class="event-modal-close" type="button" data-event-modal-close aria-label="Close event details">×</button>
+				<div class="event-modal-accent"></div>
+				<p class="event-modal-kicker" data-event-modal-kicker>Crafts 4 Charity</p>
+				<h3 id="event-modal-title" data-event-modal-title>Event title</h3>
+				<div class="event-modal-meta" data-event-modal-meta></div>
+				<p class="event-modal-copy" data-event-modal-copy></p>
+			</div>
+		</div>
 	</main>
 </body>
 </html>
