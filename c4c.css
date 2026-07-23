@@ -229,6 +229,7 @@ header {
 
 .hero {
 	padding: 34px 0 28px;
+    margin-bottom: 25px;
 }
 
 .hero-grid {
@@ -236,7 +237,7 @@ header {
 	grid-template-columns: 1.15fr 0.85fr;
 	gap: 28px;
 	align-items: center;
-	min-height: calc(100vh - 116px);
+	min-height: calc(100vh - 166px);
 }
 
 .eyebrow {
@@ -266,8 +267,8 @@ h3 {
 }
 
 h1 {
-	font-size: clamp(3.4rem, 8vw, 6.8rem);
-	max-width: 9ch;
+	font-size: clamp(3.4rem, 5vw, 6.8rem);
+	max-width: 12ch;
 }
 
 .lede {
@@ -313,6 +314,7 @@ h1 {
 	background: linear-gradient(135deg, var(--accent), #e87f73);
 	color: white;
 	box-shadow: 0 18px 34px rgba(217, 107, 125, 0.28);
+    margin-bottom: 15px;
 }
 
 .button.secondary {
