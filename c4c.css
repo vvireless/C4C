@@ -1368,3 +1368,18 @@ section {
     width: min(500px, 90vw);
     box-shadow: 0 25px 60px rgba(0,0,0,.2);
 }
+
+.cursor-flower {
+	position: fixed;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 9999;
+	transition: opacity 200ms ease;
+}
+
+@media (max-width: 980px) {
+	.cursor-flower {
+		display: none;
+	}
+}

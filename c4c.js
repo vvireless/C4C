@@ -262,3 +262,40 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		.join('');
 });
+
+// Flower cursor follower
+(() => {
+	const flower = document.createElement('div');
+	flower.className = 'cursor-flower';
+	flower.setAttribute('aria-hidden', 'true');
+	flower.innerHTML = `<svg viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<g opacity="0.9">
+			<ellipse cx="18" cy="12" rx="5" ry="8" fill="#f4a6b8" transform="rotate(0 18 18)"/>
+			<ellipse cx="18" cy="12" rx="5" ry="8" fill="#f8bfcf" transform="rotate(72 18 18)"/>
+			<ellipse cx="18" cy="12" rx="5" ry="8" fill="#f4a6b8" transform="rotate(144 18 18)"/>
+			<ellipse cx="18" cy="12" rx="5" ry="8" fill="#f8bfcf" transform="rotate(216 18 18)"/>
+			<ellipse cx="18" cy="12" rx="5" ry="8" fill="#f4a6b8" transform="rotate(288 18 18)"/>
+			<circle cx="18" cy="18" r="4.5" fill="#ffd98a"/>
+		</g>
+	</svg>`;
+	document.body.appendChild(flower);
+
+	let mouseX = -100;
+	let mouseY = -100;
+	let flowerX = -100;
+	let flowerY = -100;
+
+	document.addEventListener('mousemove', (e) => {
+		mouseX = e.clientX;
+		mouseY = e.clientY;
+	});
+
+	const animate = () => {
+		flowerX += (mouseX - flowerX) * 0.15;
+		flowerY += (mouseY - flowerY) * 0.15;
+		flower.style.transform = `translate(${flowerX - 18}px, ${flowerY - 18}px) rotate(${flowerX * 0.3}deg)`;
+		requestAnimationFrame(animate);
+	};
+
+	animate();
+})();
